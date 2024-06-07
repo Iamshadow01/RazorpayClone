@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.customcard:hover .customcolor{
+    background-color: hsl(204, 100%, 70%);
+}
+.customcard{
+    position: relative;
+}
+.customcard:hover .wave{
+    position: absolute;
+    z-index: 110;
+    bottom: 0;
+    right:0;
+}
+.customcard:hover .customsign{
+    color: rgba(57, 136, 255, 0.986);
+}
+.customcard:hover .customcolor1{
+    background-color: blueviolet;
+}
+.bgimage{
+    background-image: url("./Images/magic-checkout-bg.svg");
+    background-repeat: no-repeat;
+}
+.bgimage:hover{
+    background-image: url("./Images/magic-checkout-hoverbg.svg");
+    background-size: cover;
+}
+.customimage{
+    animation: 20s infinite linear slidein;
+    animation-play-state: running;
+}
+@keyframes slidein {
+    0%{
+        top: 0%;
+    }
+    100%{
+        top:-100%;
+    }
+    
+}
